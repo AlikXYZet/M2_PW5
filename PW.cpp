@@ -44,7 +44,7 @@ int main()
 
 	std::cout << "Пример использования алгоритмов:\n"
 		<< "1. Deep Copy (\"глубокое\" копирование)\n"
-		<< "2. Copy  для  std::unordered_map\n"
+		<< "2. Find  для  std::unordered_map\n"
 		<< "3. Fill  для заполнения массива любыми данными\n"
 		<< '\n';
 
