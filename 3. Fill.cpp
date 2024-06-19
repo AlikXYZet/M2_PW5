@@ -6,7 +6,7 @@
 typedef std::vector<int> Array;
 
 // Функция вывода каждого элемента в консоль
-auto print = [](const Array::value_type& elem)
+auto printArray = [](const Array::value_type& elem)
 {
 	std::cout << elem << ' ';
 };
@@ -27,7 +27,7 @@ int main3()
 
 	// Вывод элементов
 	std::cout << "{ ";
-	std::for_each(arr.begin(), arr.end(), print);
+	std::for_each(arr.begin(), arr.end(), printArray);
 	std::cout << "}\n\n";
 
 	std::cout << "Заполнение всех элементов массива (вектора):\n";
@@ -35,7 +35,7 @@ int main3()
 
 	// Вывод элементов
 	std::cout << "{ ";
-	std::for_each(arr.begin(), arr.end(), print);
+	std::for_each(arr.begin(), arr.end(), printArray);
 	std::cout << "}\n\n";
 
 	return 0;

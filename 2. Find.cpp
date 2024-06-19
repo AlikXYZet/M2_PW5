@@ -6,7 +6,7 @@
 typedef std::unordered_map<int, std::string> Cell;
 
 // Функция вывода каждого элемента в консоль
-auto print = [](const Cell::value_type& elem)
+auto printCell = [](const Cell::value_type& elem)
 {
 	std::cout << elem.first << " : " << elem.second << '\n';
 };
@@ -49,7 +49,7 @@ int main2()
 	// Вывод размера контейнера
 	std::cout << "\nCell_1.size() = " << Cell_1.size() << '\n';
 	// Вывод элементов контейнера
-	std::for_each(Cell_1.begin(), Cell_1.end(), print);
+	std::for_each(Cell_1.begin(), Cell_1.end(), printCell);
 
 	std::cout << std::endl;
 

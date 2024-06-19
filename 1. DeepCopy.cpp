@@ -83,7 +83,7 @@ private:
 };
 
 // Функция вывода каждого элемента в консоль
-auto print = [](const Point& elem)
+auto printPoint = [](const Point& elem)
 {
 	std::cout << elem << '\n';
 };
@@ -149,7 +149,7 @@ int main1()
 
 	// Вывод каждого элемента
 	std::cout << "Вывод VP1 через for_each:\n";
-	std::for_each(VP1.begin(), VP1.end(), print);
+	std::for_each(VP1.begin(), VP1.end(), printPoint);
 
 	std::cout << std::endl;
 
@@ -173,7 +173,7 @@ int main1()
 
 	// Вывод каждого элемента
 	std::cout << "Вывод VP2 через for_each:\n";
-	std::for_each(VP2.begin(), VP2.end(), print);
+	std::for_each(VP2.begin(), VP2.end(), printPoint);
 
 	std::cout << std::endl;
 
